@@ -46,7 +46,7 @@ class ReviewInfer(object):
             self.model = self.load_model(model, model_weights)
         elif model is None and model_name is not None:
             self.tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3.1-8B-Instruct")
-            self.tokenizer.pad_token_id = tokenizer.eos_token_id
+            # self.tokenizer.pad_token_id = tokenizer.eos_token_id
             self.tokenizer.padding_side = "left"  # Allow batched inference
             model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3.1-8B-Instruct", device_map='auto')
             self.model = self.load_model(model, model_weights)

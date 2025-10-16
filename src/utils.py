@@ -4,39 +4,66 @@ import json
 from tqdm import tqdm
 from openai import AzureOpenAI
 from transformers import AutoTokenizer, AutoModelForCausalLM
+import boto3
+from botocore.exceptions import BotoCoreError, ClientError
+
+import os
+import json
+import boto3
+import time
+from botocore.exceptions import BotoCoreError, ClientError
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from openai import AzureOpenAI
 
 
 class BaseLLM(object):
     def __init__(self, llm_name):
         self.llm_name = llm_name
-        if llm_name.lower() in ['llama3.1', 'llama3']:
+        llm_name_lower = llm_name.lower()
+
+        # ---- Local Hugging Face models ----
+        if llm_name_lower in ['llama3.1', 'llama3']:
             self.llm_tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3.1-8B-Instruct")
-            self.llm_model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3.1-8B-Instruct", device_map='auto')
-        elif llm_name.lower() in ['gpt-4-turbo']:
-            self.client = AzureOpenAI(
-                azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"), 
-                api_key=os.getenv("AZURE_OPENAI_API_KEY"), # Obtained from the team's key manager
-                api_version="2024-05-01-preview"
+            self.llm_model = AutoModelForCausalLM.from_pretrained(
+                "meta-llama/Meta-Llama-3.1-8B-Instruct", device_map="auto"
             )
+
+        # ---- Azure GPT models ----
+        elif llm_name_lower in ['gpt-4-turbo', 'gpt-4o']:
+            self.client = AzureOpenAI(
+                azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
+                api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+                api_version="2024-05-01-preview",
+            )
+
+        # ---- AWS Bedrock models (Converse API) ----
+        elif llm_name_lower.startswith("bedrock"):
+            self.bedrock_client = boto3.client(
+                "bedrock-runtime",
+                region_name=os.getenv("AWS_REGION", "us-east-1")
+            )
+            self.bedrock_model_id = {
+                "bedrock-claude": "anthropic.claude-3-sonnet-20240229-v1:0",
+                "bedrock-titan": "amazon.titan-text-premier-v1:0",
+                "bedrock-llama3": "meta.llama3-1-70b-instruct-v1:0",
+            }.get(llm_name_lower, "anthropic.claude-3-sonnet-20240229-v1:0")
+
         else:
-            print("Not find LLM!")
-    
+            raise ValueError(f"Unknown LLM name: {llm_name}")
+
+    # ============================================================
+    # Hugging Face local generation
+    # ============================================================
     def __generate_LLM__(self, query, num_tokens_num):
         messages = [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": query},
         ]
-
         input_ids = self.llm_tokenizer.apply_chat_template(
             messages,
             add_generation_prompt=True,
-            return_tensors='pt'
+            return_tensors="pt"
         ).to(self.llm_model.device)
-
-        terminators = [
-            self.llm_tokenizer.eos_token_id,
-            self.llm_tokenizer.convert_tokens_to_ids("<|eot_id|>")
-        ]
 
         self.llm_tokenizer.pad_token = self.llm_tokenizer.eos_token
         self.llm_model.config.pad_token_id = self.llm_model.config.eos_token_id
@@ -44,40 +71,76 @@ class BaseLLM(object):
         outputs = self.llm_model.generate(
             input_ids,
             max_new_tokens=num_tokens_num,
-            eos_token_id=terminators,
             pad_token_id=self.llm_tokenizer.eos_token_id,
+            eos_token_id=self.llm_tokenizer.eos_token_id,
         )
-
         response = outputs[0][input_ids.shape[-1]:]
         generated_text = self.llm_tokenizer.decode(response, skip_special_tokens=True)
-
         return generated_text
 
+    # ============================================================
+    # Azure GPT generation
+    # ============================================================
     def __generate_GPT__(self, query, num_tokens_num):
         messages = [
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": query},
         ]
-
         try:
             response = self.client.chat.completions.create(
-                model=self.llm_name, # Model deployment name      
-                max_tokens = num_tokens_num,
-                messages=messages
+                model=self.llm_name,
+                max_tokens=num_tokens_num,
+                messages=messages,
             )
+            return response.choices[0].message.content
         except Exception as e:
-            return 'None'
+            print("Azure GPT error:", e)
+            return "None"
 
-        return response
+    # ============================================================
+    # Bedrock generation (Converse API)
+    # ============================================================
+    def __generate_Bedrock__(self, query, num_tokens_num):
+        messages = [{"role": "user", "content": [{"text": query}]}]
 
-    
-    def generate(self, query, new_tokens_num):
+        converse_params = {
+            "modelId": self.bedrock_model_id,
+            "messages": messages,
+            "inferenceConfig": {
+                "maxTokens": int(num_tokens_num),
+                "temperature": 0.7,
+                "topP": 0.9,
+            },
+        }
 
-        if self.llm_name in ['llama3.1', 'llama3']:
-            return self.__generate_LLM__(query=query, num_tokens_num=new_tokens_num)
-        elif self.llm_name in ['gpt-4-turbo']:
-            return self.__generate_GPT__()
+        # Retry logic
+        for attempt in range(3):
+            try:
+                resp = self.bedrock_client.converse(**converse_params)
+                message = (resp.get("output", {}) or {}).get("message", {})
+                blocks = message.get("content", [])
+                if blocks:
+                    return "".join([b.get("text", "") for b in blocks])
+                return ""
+            except (BotoCoreError, ClientError, Exception) as e:
+                print(f"[Bedrock Converse] attempt {attempt+1} failed:", e)
+                time.sleep(2 ** attempt)
 
+        print("Bedrock Converse failed after retries.")
+        return "None"
+
+    # ============================================================
+    # Unified interface
+    # ============================================================
+    def generate(self, query, new_tokens_num=256):
+        if self.llm_name.lower() in ['llama3.1', 'llama3']:
+            return self.__generate_LLM__(query, new_tokens_num)
+        elif self.llm_name.lower() in ['gpt-4-turbo', 'gpt-4o']:
+            return self.__generate_GPT__(query, new_tokens_num)
+        elif self.llm_name.lower().startswith("bedrock"):
+            return self.__generate_Bedrock__(query, new_tokens_num)
+        else:
+            raise ValueError("Unsupported LLM backend.")
 
 
 class QADataset:
@@ -118,6 +181,33 @@ class QADataset:
         else:
             raise KeyError("Key type not supported.")
     
+class CustomBioQALoader:
+    """
+    Loads your custom biomedical multi-choice dataset.
+    Expects JSON or JSONL with fields:
+      question, options, answer (optional).
+    """
+    def __init__(self, path):
+        with open(path, 'r') as f:
+            data = json.load(f) if path.endswith(".json") else [json.loads(l) for l in f]
+        self.data = data
+
+    def __len__(self):
+        return len(self.data)
+
+    def __iter__(self):
+        for sample in self.data:
+            q = sample["question"]
+            opts = sample["options"]
+            mc_text = q + "\n"
+            for k, v in opts.items():
+                mc_text += f"{k}. {v}\n"
+            yield {
+                "text": mc_text.strip(),
+                "answer": sample.get("answer", "A")  # optional
+            }
+           
+         
 class MedDDxLoader:
     def __init__(self, data, dir="dataset/"):
         benchmark = self.process_dataset(dir)

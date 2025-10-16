@@ -4,10 +4,10 @@ from transformers import set_seed
 import json
 from tqdm import tqdm
 import logging
-from src.utils import QADataset, MedDDxLoader, BaseLLM, AfrimedLoader
+from src.utils import QADataset, MedDDxLoader, BaseLLM, AfrimedLoader, CustomBioQALoader
 from action.generate import Generate
 from action.review import Review
-from action.answer import Answer, AnswerOpen
+from action.answer import Answer
 
 set_seed(42)
 
@@ -55,7 +55,9 @@ def main(args):
     bioKG_agent = KGARevion(args=args)
 
     ##load data
-    if args.dataset in ['MedDDx', 'MedDDx-Basic', 'MedDDx-Intermediate', 'MedDDx-Expert']:
+    if args.dataset == 'custom':
+        data = CustomBioQALoader(args.data_path)
+    elif args.dataset in ['MedDDx', 'MedDDx-Basic', 'MedDDx-Intermediate', 'MedDDx-Expert']:
         data = MedDDxLoader(args.dataset)
     elif args.dataset in ['AfrimedQA-MCQ']:
         data = AfrimedLoader(args.dataset)
@@ -136,13 +138,14 @@ def main(args):
 if __name__ == '__main__':
     set_seed(42)
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset", default='MedDDx', choices=['mmlu', 'medqa', 'pubmedqa', 'bioasq', 'MedDDx', 'MedDDx-Basic', 'MedDDx-Intermediate', 'MedDDx-Expert', 'afrimedqa_v2', 'AfrimedQA-SAQ'], type=str)
+    parser.add_argument("--dataset", default='MedDDx', choices=['mmlu', 'medqa', 'pubmedqa', 'bioasq', 'MedDDx', 'MedDDx-Basic', 'MedDDx-Intermediate', 'MedDDx-Expert', 'afrimedqa_v2', 'AfrimedQA-SAQ', "custom"], type=str)
     parser.add_argument("--key", type=str)
+    parser.add_argument("--data_path", type = str)
     parser.add_argument("--type", type=str, default='MCQ', choices=['MCQ', 'SAQ'])
     parser.add_argument("--max_round", type=int, default=1)
     parser.add_argument("--is_revise", type=bool, default=True)
     parser.add_argument("--KG_name", default='primeKG', choices=['UMLS', 'primeKG', 'ogb-biokg'], type=str)
-    parser.add_argument("--llm_name", default='llama3.1', choices=['llama3.1', 'llama3', 'gpt-4-turbo', 'llama3.1-70'], type=str)
+    parser.add_argument("--llm_name", default='llama3.1', choices=['llama3.1', 'llama3', 'gpt-4-turbo', 'llama3.1-70', "bedrock-llama3"], type=str)
     parser.add_argument("--weights_path", type=str, default='fine_tuned_model/')
     args = parser.parse_args()
     main(args)

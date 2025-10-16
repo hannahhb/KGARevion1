@@ -1,0 +1,160 @@
+2025-10-16 15:57:14,443 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2025-10-16 15:57:14,444 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2025-10-16 15:57:14,444 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2025-10-16 15:57:14,445 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2025-10-16 15:57:14,445 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2025-10-16 15:57:14,445 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2025-10-16 15:57:14,445 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2025-10-16 15:57:14,446 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2025-10-16 15:57:14,446 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2025-10-16 15:57:14,446 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2025-10-16 15:57:14,446 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2025-10-16 16:01:12,976 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2025-10-16 16:01:12,977 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2025-10-16 16:01:12,977 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2025-10-16 16:01:12,978 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2025-10-16 16:01:12,978 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2025-10-16 16:01:12,978 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2025-10-16 16:01:12,978 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2025-10-16 16:01:12,979 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2025-10-16 16:01:12,979 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2025-10-16 16:01:12,979 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2025-10-16 16:01:12,979 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2025-10-16 16:01:35,568 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2025-10-16 16:01:35,568 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2025-10-16 16:01:35,569 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2025-10-16 16:01:35,569 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2025-10-16 16:01:35,569 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2025-10-16 16:01:35,569 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2025-10-16 16:01:35,570 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2025-10-16 16:01:35,571 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2025-10-16 16:01:35,571 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2025-10-16 16:01:35,571 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2025-10-16 16:01:35,571 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2025-10-16 16:02:51,613 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2025-10-16 16:02:51,614 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2025-10-16 16:02:51,615 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2025-10-16 16:02:51,615 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2025-10-16 16:02:51,615 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2025-10-16 16:02:51,615 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2025-10-16 16:02:51,616 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2025-10-16 16:02:51,616 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2025-10-16 16:02:51,617 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2025-10-16 16:02:51,617 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2025-10-16 16:02:51,617 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2025-10-16 16:04:40,956 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2025-10-16 16:04:40,957 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2025-10-16 16:04:40,958 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2025-10-16 16:04:40,958 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2025-10-16 16:04:40,958 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2025-10-16 16:04:40,958 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2025-10-16 16:04:40,959 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2025-10-16 16:04:40,959 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2025-10-16 16:04:40,960 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2025-10-16 16:04:40,960 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2025-10-16 16:04:40,960 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2025-10-16 16:04:40,961 - DEBUG - IMDS ENDPOINT: http://169.254.169.254/
+2025-10-16 16:04:40,963 - DEBUG - Looking for credentials via: env
+2025-10-16 16:04:40,963 - INFO - Found credentials in environment variables.
+2025-10-16 16:04:40,965 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/endpoints.json
+2025-10-16 16:04:40,975 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/sdk-default-configuration.json
+2025-10-16 16:04:40,975 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x2b45a4ae0>
+2025-10-16 16:04:41,014 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/bedrock-runtime/2023-09-30/service-2.json.gz
+2025-10-16 16:04:41,029 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/bedrock-runtime/2023-09-30/endpoint-rule-set-1.json.gz
+2025-10-16 16:04:41,029 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/partitions.json
+2025-10-16 16:04:41,030 - DEBUG - Event creating-client-class.bedrock-runtime: calling handler <function remove_bedrock_runtime_invoke_model_with_bidirectional_stream at 0x2b45de160>
+2025-10-16 16:04:41,030 - DEBUG - Event creating-client-class.bedrock-runtime: calling handler <function add_generate_presigned_url at 0x2b4533740>
+2025-10-16 16:04:41,030 - DEBUG - Looking for endpoint for bedrock-runtime via: environment_service
+2025-10-16 16:04:41,030 - DEBUG - Looking for endpoint for bedrock-runtime via: environment_global
+2025-10-16 16:04:41,030 - DEBUG - Looking for endpoint for bedrock-runtime via: config_service
+2025-10-16 16:04:41,030 - DEBUG - Looking for endpoint for bedrock-runtime via: config_global
+2025-10-16 16:04:41,030 - DEBUG - No configured endpoint found.
+2025-10-16 16:04:41,030 - DEBUG - Creating a regex based endpoint for bedrock-runtime, us-east-1
+2025-10-16 16:04:41,031 - DEBUG - Setting bedrock-runtime timeout as (60, 60)
+2025-10-16 16:04:41,032 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/_retry.json
+2025-10-16 16:04:41,032 - DEBUG - Registering retry handlers for service: bedrock-runtime
+2025-10-16 16:04:41,272 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-16 16:04:41,513 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-16 16:04:41,519 - DEBUG - Attempting to acquire lock 11980232720 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/db88166e2bc4c799fd5d1ae643b75e84d03ee70e.lock
+2025-10-16 16:04:41,519 - DEBUG - Lock 11980232720 acquired on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/db88166e2bc4c799fd5d1ae643b75e84d03ee70e.lock
+2025-10-16 16:04:41,762 - DEBUG - https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 200 55351
+2025-10-16 16:04:41,791 - DEBUG - Attempting to release lock 11980232720 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/db88166e2bc4c799fd5d1ae643b75e84d03ee70e.lock
+2025-10-16 16:04:41,791 - DEBUG - Lock 11980232720 released on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/db88166e2bc4c799fd5d1ae643b75e84d03ee70e.lock
+2025-10-16 16:04:42,029 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer.json HTTP/1.1" 307 0
+2025-10-16 16:04:42,279 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2025-10-16 16:04:42,282 - DEBUG - Attempting to acquire lock 12000520208 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/5cc5f00a5b203e90a27a3bd60d1ec393b07971e8.lock
+2025-10-16 16:04:42,282 - DEBUG - Lock 12000520208 acquired on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/5cc5f00a5b203e90a27a3bd60d1ec393b07971e8.lock
+2025-10-16 16:04:42,527 - DEBUG - https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer.json HTTP/1.1" 200 9085657
+2025-10-16 16:04:44,207 - DEBUG - Attempting to release lock 12000520208 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/5cc5f00a5b203e90a27a3bd60d1ec393b07971e8.lock
+2025-10-16 16:04:44,207 - DEBUG - Lock 12000520208 released on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/5cc5f00a5b203e90a27a3bd60d1ec393b07971e8.lock
+2025-10-16 16:04:44,446 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer.model HTTP/1.1" 307 0
+2025-10-16 16:04:44,689 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer.model HTTP/1.1" 404 0
+2025-10-16 16:04:44,928 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/added_tokens.json HTTP/1.1" 307 0
+2025-10-16 16:04:45,170 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2025-10-16 16:04:45,413 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/special_tokens_map.json HTTP/1.1" 307 0
+2025-10-16 16:04:45,651 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2025-10-16 16:04:45,653 - DEBUG - Attempting to acquire lock 12000515856 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/02ee80b6196926a5ad790a004d9efd6ab1ba6542.lock
+2025-10-16 16:04:45,654 - DEBUG - Lock 12000515856 acquired on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/02ee80b6196926a5ad790a004d9efd6ab1ba6542.lock
+2025-10-16 16:04:45,892 - DEBUG - https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/special_tokens_map.json HTTP/1.1" 200 296
+2025-10-16 16:04:45,896 - DEBUG - Attempting to release lock 12000515856 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/02ee80b6196926a5ad790a004d9efd6ab1ba6542.lock
+2025-10-16 16:04:45,896 - DEBUG - Lock 12000515856 released on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/02ee80b6196926a5ad790a004d9efd6ab1ba6542.lock
+2025-10-16 16:04:46,129 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/chat_template.jinja HTTP/1.1" 307 0
+2025-10-16 16:04:46,365 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-10-16 16:06:10,441 - DEBUG - Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2025-10-16 16:06:10,442 - DEBUG - Changing event name from before-call.apigateway to before-call.api-gateway
+2025-10-16 16:06:10,442 - DEBUG - Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2025-10-16 16:06:10,442 - DEBUG - Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2025-10-16 16:06:10,442 - DEBUG - Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2025-10-16 16:06:10,442 - DEBUG - Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2025-10-16 16:06:10,443 - DEBUG - Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2025-10-16 16:06:10,444 - DEBUG - Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2025-10-16 16:06:10,444 - DEBUG - Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2025-10-16 16:06:10,444 - DEBUG - Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2025-10-16 16:06:10,444 - DEBUG - Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2025-10-16 16:06:10,445 - DEBUG - IMDS ENDPOINT: http://169.254.169.254/
+2025-10-16 16:06:10,447 - DEBUG - Looking for credentials via: env
+2025-10-16 16:06:10,447 - INFO - Found credentials in environment variables.
+2025-10-16 16:06:10,447 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/endpoints.json
+2025-10-16 16:06:10,456 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/sdk-default-configuration.json
+2025-10-16 16:06:10,456 - DEBUG - Event choose-service-name: calling handler <function handle_service_name_alias at 0x2b3f14ae0>
+2025-10-16 16:06:10,471 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/bedrock-runtime/2023-09-30/service-2.json.gz
+2025-10-16 16:06:10,482 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/bedrock-runtime/2023-09-30/endpoint-rule-set-1.json.gz
+2025-10-16 16:06:10,482 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/partitions.json
+2025-10-16 16:06:10,483 - DEBUG - Event creating-client-class.bedrock-runtime: calling handler <function remove_bedrock_runtime_invoke_model_with_bidirectional_stream at 0x2b3f4a160>
+2025-10-16 16:06:10,483 - DEBUG - Event creating-client-class.bedrock-runtime: calling handler <function add_generate_presigned_url at 0x2b3ea3740>
+2025-10-16 16:06:10,483 - DEBUG - Looking for endpoint for bedrock-runtime via: environment_service
+2025-10-16 16:06:10,483 - DEBUG - Looking for endpoint for bedrock-runtime via: environment_global
+2025-10-16 16:06:10,483 - DEBUG - Looking for endpoint for bedrock-runtime via: config_service
+2025-10-16 16:06:10,483 - DEBUG - Looking for endpoint for bedrock-runtime via: config_global
+2025-10-16 16:06:10,483 - DEBUG - No configured endpoint found.
+2025-10-16 16:06:10,483 - DEBUG - Creating a regex based endpoint for bedrock-runtime, us-east-1
+2025-10-16 16:06:10,484 - DEBUG - Setting bedrock-runtime timeout as (60, 60)
+2025-10-16 16:06:10,484 - DEBUG - Loading JSON file: /Users/hannah_mac/miniconda3/envs/curebench/lib/python3.11/site-packages/botocore/data/_retry.json
+2025-10-16 16:06:10,485 - DEBUG - Registering retry handlers for service: bedrock-runtime
+2025-10-16 16:06:10,721 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-10-16 16:06:10,957 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-10-16 16:06:11,493 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+2025-10-16 16:06:11,734 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 200 0
+2025-10-16 16:06:11,736 - DEBUG - Attempting to acquire lock 12002664272 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0bb6fd75b3ad2fe988565929f329945262c2814e.lock
+2025-10-16 16:06:11,737 - DEBUG - Lock 12002664272 acquired on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0bb6fd75b3ad2fe988565929f329945262c2814e.lock
+2025-10-16 16:06:11,973 - DEBUG - https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 200 855
+2025-10-16 16:06:12,003 - DEBUG - Attempting to release lock 12002664272 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0bb6fd75b3ad2fe988565929f329945262c2814e.lock
+2025-10-16 16:06:12,003 - DEBUG - Lock 12002664272 released on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0bb6fd75b3ad2fe988565929f329945262c2814e.lock
+2025-10-16 16:06:12,264 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/adapter_config.json HTTP/1.1" 307 0
+2025-10-16 16:06:12,516 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-10-16 16:06:12,787 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/model.safetensors HTTP/1.1" 307 0
+2025-10-16 16:06:13,048 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/model.safetensors HTTP/1.1" 404 0
+2025-10-16 16:06:13,289 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/model.safetensors.index.json HTTP/1.1" 307 0
+2025-10-16 16:06:13,533 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/model.safetensors.index.json HTTP/1.1" 200 0
+2025-10-16 16:06:13,535 - DEBUG - Attempting to acquire lock 12002637904 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0fd8120f1c6acddc268ebc2583058efaf699a771.lock
+2025-10-16 16:06:13,536 - DEBUG - Lock 12002637904 acquired on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0fd8120f1c6acddc268ebc2583058efaf699a771.lock
+2025-10-16 16:06:13,780 - DEBUG - https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/model.safetensors.index.json HTTP/1.1" 200 23950
+2025-10-16 16:06:13,784 - DEBUG - Attempting to release lock 12002637904 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0fd8120f1c6acddc268ebc2583058efaf699a771.lock
+2025-10-16 16:06:13,784 - DEBUG - Lock 12002637904 released on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0fd8120f1c6acddc268ebc2583058efaf699a771.lock
+2025-10-16 16:06:14,034 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/model-00001-of-00004.safetensors HTTP/1.1" 307 0
+2025-10-16 16:06:14,285 - DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/model-00001-of-00004.safetensors HTTP/1.1" 302 0
+2025-10-16 16:06:14,290 - DEBUG - Attempting to acquire lock 12002924496 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668.lock
+2025-10-16 16:06:14,291 - DEBUG - Lock 12002924496 acquired on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668.lock
+2025-10-16 16:06:14,550 - DEBUG - https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/xet-read-token/0e9e39f249a16976918f6564b8830bc894c89659 HTTP/1.1" 200 379
+2025-10-16 16:06:17,857 - DEBUG - Attempting to release lock 12002924496 on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668.lock
+2025-10-16 16:06:17,857 - DEBUG - Lock 12002924496 released on /Users/hannah_mac/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668.lock
